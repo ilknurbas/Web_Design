@@ -1,0 +1,549 @@
+html { 
+	margin: 0;
+	padding: 0;
+	font-family: 'IBM Plex Serif', serif;
+	height: 100%;
+	scroll-behavior:smooth;
+}
+body	{
+	margin: 0;
+	padding: 0;
+	font-family: 'IBM Plex Serif', serif;
+	height: 100%;
+	background-color: rgba(248,248,248,1);
+}
+nav	{
+	display: flex; 
+ 	justify-content:space-between; 
+ 	width: 100%;
+	background-color: #f2e4ca;
+	box-shadow: 0 1px 12px rgba(0,0,0,0.15);
+	height: 62px;
+	position: fixed;
+	top: 0;
+	z-index:1;
+	 
+}
+
+ul	{
+	text-align: center;
+	padding: 0;
+	 margin: 18px 0 0 0; 
+}
+
+li	{
+	display: inline;
+	color: rgba(0,0,0,0.4);
+	font-size: 18px;
+	font-weight: 600;
+    padding: 22px 4%;
+	
+}
+nav a	{
+	text-decoration: none;
+	color: #625c52;
+	transition: color 0.5s ease;
+}
+nav a:hover	{
+	color: rgba(253,130,170,1);
+}
+
+
+.menu-container {
+  background-color: #f2e4ca;  
+  display: flex;
+  justify-content: center;
+  padding: 3px 0;
+}
+
+  
+
+
+.menu {
+  display: flex; 
+  justify-content: space-around;
+  
+}
+
+.link1 {
+ /* display: flex;
+ justify-content: flex-start;*/
+  flex:1;
+  
+
+}
+.link2 {
+  /*display: flex;
+  justify-content: flex-end;*/
+   flex:1;
+  
+}
+ 
+.linkLogo {
+	 /*flex:1;*/
+	 width: 60px;
+	 height: 61px;
+	 background-image: url('logo.png'); /*fork*/
+	 background-color:#f2e4ca;
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 display:block;
+
+}
+
+
+.mybutton	{
+	font-size: 1.25em;
+	font-weight: 300;
+	text-align: center;
+	display: block;
+	background-color: rgba(255,255,255,0.75);
+	width: 6em;
+	text-decoration: none;
+	color: rgba(65,65,65,0.75);
+	padding: 0.25em;
+	border-radius: 20px;
+	transition: all 0.3s ease;
+	
+	margin: 0.5em 2em 0.5em 4em;
+
+}
+	
+	
+ 
+.mybutton:hover	{
+	background-color: rgba(255,255,255,1);
+	box-shadow:	8px 8px 16px rgba(0,0,0,0.2);
+}
+
+
+header	{
+	width: 100%;
+	min-height: 700px;
+	background-image: url('food.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.bold_text 	{
+	font-weight: 700;
+}
+
+.leftcolumn	{
+	display: flex;
+	flex-direction: column;  
+	flex: 1;  
+	/*margin:0em 8em 74em 47em; sildikkk*/
+	
+}
+h1	{
+	font-size: 4em;
+	line-height: 1em;
+	color:#625c52;
+	margin: 0;
+	padding: 11% 5% 5px 58%; /*this will change in iphone etc*/
+	
+}
+.leftcolumn p{
+	padding: 20px 9% 22px 58%;
+	
+}
+
+
+.mybuttonBuy	{
+	font-size: 1.25em;
+	font-weight: 300;
+	text-align: center;
+	display: block;	
+	background-color: #f2e4ca;
+	width: 5em;
+	/*margin: 1.25em auto;*/
+	margin: 1.25em 14em 1.5em auto;
+	/*margin: 1.5em 10em 1.5em 40.5em; /*this will change in iphone etc*/
+	text-decoration: none;
+	color: rgba(65,65,65,0.75);
+	padding: 0.30em;
+	border-radius: 0px;
+	transition: all 0.3s ease;
+}
+	
+	
+ 
+.mybuttonBuy:hover	{
+	background-color: rgba(255,255,255,1);
+	box-shadow:	8px 8px 16px rgba(0,0,0,0.2);
+}
+
+
+
+h2	{
+	font-size: 24px;
+	font-weight: 300;
+	text-align: center;
+	color:#625c52;
+	margin: 0;
+	padding: 15px 6px 10px 0px;
+	background-color:#efedf8;
+ 
+}
+
+
+#cardcollection	{	
+	/*#f1f1f1*/
+	background-color:#efedf8;
+	display:flex;
+	flex-direction: column;
+}
+
+#cardcollection	 p {
+	line-height: 24px;
+	font-weight: 300;
+	
+	margin: 0;
+	padding: 7% 4% 7% 4%;
+}
+
+.cards1 {
+	width: 96%;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 1.5% 2% 0 2%;
+	 
+}
+.cards2 {
+	width: 96%;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 1.5% 2% 0 2%;
+
+}
+
+.card	{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	height: auto;
+	background-color: rgba(255,255,255,1);
+	margin: 1%;
+	box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+	border-radius: 4px;
+	
+}
+.card img	{
+	padding: 7% 2% 2% 2%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;  
+	border-radius: 50%;	 
+ 
+	
+}
+
+h3	{
+	font-size: 24px;
+	font-weight: 300;
+	text-align: center;
+	color:#625c52;
+	margin: 0;
+	padding: 15px 6px 10px 0px;
+	background-color:#efedf8;
+ 
+}
+#timetable {
+	width: 100%;
+	background-color:#efedf8;
+	padding-bottom:50px;
+	
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	/*padding: 1.5% 2% 0 2%; saçma oluyor*/
+	
+	/*you need 
+	flex-basis:30%;
+	display: flex;
+	justify-content: space-around;
+	*/
+	
+}
+/*
+.deneme{
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	padding: 1.5% 2% 0 2%;
+}
+*/
+.timetable1 {
+	flex: 1;
+	
+	/*margin :2% 1%; /*boxların aralarına boşluk*/
+}
+
+ 
+
+table	{
+	flex: 1;
+	margin :3% ;
+	height: auto;
+	font-size: 16px;
+	line-height: 24px;
+	color: rgba(0,0,0,0.87);
+	text-align: left;
+	border-spacing: 16px 16px;  
+	background-color: white;
+	box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+	border-radius: 4px;
+	
+	
+}
+
+/* Modal window begins here --------- */
+.modalDialog	{ /* this is the parent div */
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color:rgba(245, 230, 204, 0.65);
+	overflow: auto; /* if we have excess content, this enables scrolling */
+	opacity: 0;
+	pointer-events: none; /* when the modal is invisible, mouse functionalities are disabled. */
+	transition: all 0.3s ease;
+	z-index:2;
+}
+.modalDialog:target	{
+	opacity: 1; /* this makes the modal visible, on-click */
+	pointer-events: auto; /* gives back the mouse functionalities */
+}
+.modalDialog > div	{ /* this is a child selector, it only selects the direct child elements */
+	background-color: #fff;
+	    width: 24%;
+	    padding: 2% 3%;
+	    margin: 10% auto;
+	    border-radius: 8px;
+	    position: relative;/* the positioning of this div itself is NOT relative. But the positioning of its' contents ARE relative to THIS div */
+}
+textarea	{
+	display: block;
+    width: 77%;
+    height: 48px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    background-color: rgba(0,0,0,0.05);
+    margin: 18px auto;
+    outline: none;
+    /* border: none; */
+    resize: none;
+}
+.closebutton	{
+	background-color: rgb(98, 92, 82);
+	    color: #fff;
+	    font-size: 20px;
+	    font-weight: 600;
+	    text-decoration: none;
+	    line-height: 36px;
+	    width: 42px;
+	    position: absolute;
+	    top: 0px;
+	    right: 0px;
+	    text-align: center;
+	    border-radius: 5px;
+	    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+	    transition: all 0.3s ease;
+}
+.closebutton:hover	{
+	background-color: #000;
+	box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+.modalDialog h1	{
+	text-align: left;
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 300;
+	color: rgba(122,131,153,1);
+	padding: 16px 0;
+}
+.modalDialog .mybutton	{
+	background-color: rgb(98, 92, 82);
+	color: #fff;
+	margin: 16px 0px 0px 32%;
+	font-size: 14px;
+}
+
+h4	{
+	color: rgb(98, 92, 82);
+	 
+}
+
+.mapContainer {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 61%;  
+	position: relative;
+}
+
+.googlemap {
+	border: 0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+ 
+
+@media	(max-width: 768px){ /*ipad*/
+	
+	.leftcolumn p {
+	    padding: 20px 9% 28px 54%;
+	}
+	
+	h1{
+		padding: 20% 0% 18px 53%;
+	}
+	
+	.mybuttonBuy{
+		margin: 0.5em 6em 0.5em 24em;
+	}
+	
+	.modalDialog > div {
+	    background-color: #fff;
+	    width: 24%;
+	    padding: 4% 7%;
+	    margin: 26% auto;
+	    border-radius: 8px;
+	    position: relative;
+	}
+	
+	#timetable {
+		width: 100%;
+		background-color: #efedf8;
+		padding-bottom: 50px;
+		display: flex;
+		flex-direction: column;	   
+	}
+	
+}
+
+@media	(max-width: 414px){ /*iphone 678 plus  */
+	.modalDialog > div {
+	    background-color: #fff;
+	    width: 42%;
+	    padding: 5% 14%;
+	    margin: 38% auto;
+	    border-radius: 8px;
+	    position: relative;
+	}
+	.mybuttonBuy{
+		margin: 0em 0.5em 0.5em 11em;
+	}
+	
+	h1{
+		font-size: 2.2em;
+		padding: 23% 5% 5px 40%;
+	}
+	
+	.cards1 {
+		flex-direction: column;
+	}
+	.cards2 {
+		flex-direction: column;
+	}
+	.card	{
+		flex-basis: 100%;
+	}
+	
+	#timetable {
+		width: 100%;
+		background-color: #efedf8;
+		padding-bottom: 50px;
+		display: flex;
+		flex-direction: column;	   
+	}
+	 
+}
+
+
+@media	(max-width: 375px)	{ /* iphone 6-7-8  also iphone X */
+
+	.cards1 {
+		flex-direction: column;
+	}
+	.cards2 {
+		flex-direction: column;
+	}
+	.card	{
+		flex-basis: 100%;
+	}
+	.leftcolumn {
+		margin:0;
+	}
+	
+	.mybuttonBuy{
+		margin: 0em 0.5em 0.5em 11em;
+	}
+	
+	h1{
+		font-size: 2.2em;
+		padding: 23% 5% 5px 40%;
+	}
+	
+	.modalDialog > div {
+	    background-color: #fff;
+	    width: 42%;
+	    padding: 5% 14%;
+	    margin: 38% auto;
+	    border-radius: 8px;
+	    position: relative;
+	}
+	
+	#timetable {
+		width: 100%;
+		background-color: #efedf8;
+		padding-bottom: 50px;
+		display: flex;
+		flex-direction: column;	   
+	}
+}
+
+@media	(max-width: 320px)	{ /*iphone 5/se*/ /*header*/
+	.mybuttonBuy {
+	    margin: 0em 0.5em 0.5em 9em;
+	}
+	
+	h1 {
+	    font-size: 2em;
+	    padding: 26% 5% 6px 36%;
+	}
+	
+	.modalDialog > div {
+	    background-color: #fff;
+	    width: 42%;
+	    padding: 5% 14%;
+	    margin: 38% auto;
+	    border-radius: 8px;
+	    position: relative;
+	}
+	
+	li {
+	    display: inline;
+	    color: rgba(0,0,0,0.4);
+	    font-size: 15px;
+	    font-weight: 600;
+	    padding: 22px 4%;
+	}
+}
+
+
+
+
+
